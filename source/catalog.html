@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="no-js">
+  <header class="header">
+    <!-- navigation--open открывает меню -->
+    <nav class="header__navigation navigation">
+      <a class="navigation__logo" href="index.html">
+        <img src="img/svg/logo.svg" width="185" height="96" alt="Логотип Седоны.">
+      </a>
+      <button class="navigation__btn" type="button">
+        <span class="visually-hidden">Открыть / Закрыть меню</span>
+      </button>
+      <ul class="navigation__list list-reset">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="catalog.html" aria-current="page">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="https://htmlacademy.ru">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="intro intro--page">
+      <div class="intro__bg">
+        <img src="img/svg/sedona.svg" width="229" height="39" alt="Седона.">
+      </div>
+      <div class="intro__description">
+        <h1 class="intro__title">Фото и видео</h1>
+        <p class="intro__text">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2 class="visually-hidden">Галлерея фотографий</h2>
+      <ol class="gallery__list list-reset">
+        <li class="gallery__item">
+          <a class="gallery__img" href="#">
+            <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+          </a>
+          <div class="gallery__container">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Неродные просторы</h2>
+              <span class="gallery__photographer">Автор фото: Борис</span>
+            </div>
+            <button class="gallery__like" type="button" aria-label="Like">
+              <span>1350</span>
+            </button>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__img" href="#">
+            <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+          </a>
+          <div class="gallery__container">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Местная растительность</h2>
+              <span class="gallery__photographer">Автор фото: Сергей</span>
+            </div>
+            <button class="gallery__like" type="button" aria-label="Like">
+              <span>143</span>
+            </button>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__img" href="#">
+            <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+          </a>
+          <div class="gallery__container">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Дорога на север</h2>
+              <span class="gallery__photographer">Автор фото: Пётр</span>
+            </div>
+            <button class="gallery__like" type="button" aria-label="Like">
+              <span>96</span>
+            </button>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__img" href="#">
+            <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола.">
+          </a>
+          <div class="gallery__container">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Мост Дьявола</h2>
+              <span class="gallery__photographer">Автор фото: Антон</span>
+            </div>
+            <button class="gallery__like" type="button" aria-label="Like">
+              <span>254</span>
+            </button>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <a class="footer__appeal" href="#">#Visitsedona</a>
+    <ul class="footer__social social list-reset">
+      <li class="social__item">
+        <a class="social__link" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в контакте.</span>
+          <img src="img/sprite/icon-vk.svg" width="24" height="24" alt="">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в телеграм.</span>
+          <img src="img/sprite/icon-telegram.svg" width="24" height="24" alt="">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы на YouTybe.</span>
+          <img src="img/sprite/icon-youtube.svg" width="24" height="24" alt="">
+        </a>
+      </li>
+    </ul>
+    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="footer__copyright-text">Разработано</span>
+      <img src="img/sprite/icon-htmlacademy.svg" width="24" height="24" alt="">
+
+    </a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
