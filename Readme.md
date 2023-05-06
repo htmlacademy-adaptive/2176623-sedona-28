@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Julia Sokolova](https://up.htmlacademy.ru/adaptive/28/user/2176623).
-* Наставник: `Неизвестно`.
+* Наставник: `Natali Zotova`.
 
 ---
 
