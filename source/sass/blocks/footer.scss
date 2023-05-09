@@ -1,0 +1,34 @@
+.footer {
+  padding: 42px 20px 32px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer__appeal {
+  display: inline-block;
+  margin-bottom: 31px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__copyright-text {
+  margin-right: 12px;
+}
+
+.footer__social {
+  margin-bottom: 30px;
+}
