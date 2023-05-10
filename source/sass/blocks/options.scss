@@ -9,7 +9,6 @@
   @media (min-width: 768px) {
     padding: 0 36px;
 
-    gap: 16px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -34,6 +33,63 @@
 
     gap: 16px 62px;
     grid-template-columns: repeat(4, auto);
+  }
+}
+
+.options__item {
+  display: grid;
+  align-items: center;
+
+  gap: 16px;
+  grid-template-columns: auto 1fr;
+}
+
+.options__input {
+  position: relative;
+
+  width: 46px;
+  height: 46px;
+  margin: 0;
+
+  background-color: #f2f2f2;
+  border-radius: 4px;
+
+  appearance: none;
+}
+
+.options__input[type="radio"] {
+  border-radius: 50%;
+
+  &:checked:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 14px;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #333333;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.options__input[type="checkbox"] {
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../img/svg/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(-50%, -50%);
   }
 }
 
