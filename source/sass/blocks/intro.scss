@@ -3,6 +3,79 @@
   text-transform: uppercase;
 }
 
+.intro__bg {
+  position: relative;
+
+  padding-top: 90px;
+  padding-bottom: 85px;
+
+  background-color: $color-contrast;
+  background-image: url("../img/bg-intro-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 57px;
+
+    background-image: url("../img/svg/sedona-intro-decor.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: 1200px) {
+      bottom: -1px;
+    }
+  }
+}
+
+.intro__bg img {
+  display: block;
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 461px;
+    height: 350px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 460px;
+  }
+}
+
+.intro--page img {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: 768px) {
+    width: 460px;
+    height: 78px;
+  }
+}
+
+.intro__description {
+  padding: 34px 30px 16px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding: 50px 80px 55px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+}
+
 .intro__title {
   font-weight: 700;
   font-size: 18px;
