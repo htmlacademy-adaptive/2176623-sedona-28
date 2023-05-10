@@ -1,9 +1,55 @@
+.form {
+  @media (min-width: 768px) {
+    padding: 55px 40px 42px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 15px 100px 43px;
+  }
+}
+
+.form__wrapper-fieldset {
+  @media (min-width: 768px) {
+    position: relative;
+
+    display: grid;
+
+    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    gap: 60px;
+  }
+
+  &::before {
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      top: 16px;
+      bottom: 16px;
+      left: 50%;
+
+      width: 1px;
+
+      background-color: #dbdbdb;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 .form__fieldset {
   margin: 0;
   padding: 24px 20px 23px;
 
   border: none;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: 768px) {
+    padding: 24px 20px 27px;
+
+    border: none;
+  }
 }
 
 .form__fieldset-title {
