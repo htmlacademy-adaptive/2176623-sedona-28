@@ -13,6 +13,16 @@
   height: 96px;
 
   transform: translateX(-50%);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__btn {
@@ -33,6 +43,16 @@
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -142,6 +162,19 @@
     line-height: 21px;
     color: #000000;
   }
+
+  &:hover,
+  &:focus {
+    @media (min-width: 768px) {
+      color: #81b3d2;
+
+      outline: none;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .navigation__link--current {
@@ -171,5 +204,7 @@
 
   @media (min-width: 768px) {
     position: static;
+
+    display: grid;
   }
 }
