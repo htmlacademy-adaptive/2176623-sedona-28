@@ -1,3 +1,20 @@
+.contact {
+  display: grid;
+
+  gap: 16px;
+  grid-template-columns: 1fr;
+
+  @media (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+}
+
+.contact--info {
+  @media (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+}
+
 .contact__label {
   padding-left: 16px;
 
@@ -38,5 +55,31 @@
     background-image: url("../img/svg/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: center right -4px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+    border-color: #e5e5e5;
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
+
+  &--valid {
+    border-color: #7db54f;
+  }
+
+  &--invalid {
+    border-color: #ff5757;
   }
 }

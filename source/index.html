@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -58,6 +63,10 @@
             </div>
             <div class="advantages__img">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantage-1-desktop.webp 1x, img/advantage-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/advantage-1-tablet.webp 1x, img/advantage-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/advantage-1-mobile.webp 1x, img/advantage-1-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/advantage-1-desktop.jpg 1x, img/advantage-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/advantage-1-tablet.jpg 1x, img/advantage-1-tablet@2x.jpg 2x">
                 <img src="img/advantage-1-mobile.jpg" srcset="img/advantage-1-mobile@2x.jpg 2x" width="320" height="260" alt="Праздничный городок.">
@@ -88,6 +97,10 @@
             </div>
             <div class="advantages__img">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantage-2-desktop.webp 1x, img/advantage-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/advantage-2-tablet.webp 1x, img/advantage-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/advantage-2-mobile.webp 1x, img/advantage-2-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/advantage-2-desktop.jpg 1x, img/advantage-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/advantage-2-tablet.jpg 1x, img/advantage-2-tablet@2x.jpg 2x">
                 <img src="img/advantage-2-mobile.jpg" srcset="img/advantage-2-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола..">
@@ -128,7 +141,10 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701621.4470020552!2d-112.23016531565146!3d34.8319356793181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1658414241197!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <noscript>
         <a class="map__img" href="#">
-          <img src="img/map.jpg" width="320" height="350" alt="Карта.">
+          <picture>
+            <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+            <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="320" height="350" alt="Карта.">
+          </picture>
         </a>
       </noscript>
     </section>
